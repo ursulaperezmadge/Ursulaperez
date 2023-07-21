@@ -395,7 +395,7 @@
     }
    ],
    "source": [
-    "tesla_revenue[\"Revenue\"] = tesla_revenue['Revenue'].str.replace(',|\"\")"
+    "tesla_revenue[\"Revenue\"] = tesla_revenue['Revenue'].str.replace(',|\\$',\"\")"
    ]
   },
   {
@@ -425,10 +425,26 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
+   "execution_count": 11,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'tesla_revenue' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m/tmp/ipykernel_71/899846489.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mtesla_revenue\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtail\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'tesla_revenue' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "tesla_revenue.tail()"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -498,10 +514,6 @@
    "cell_type": "code",
    "execution_count": 8,
    "metadata": {
-    "collapsed": true,
-    "jupyter": {
-     "outputs_hidden": true
-    },
     "tags": []
    },
    "outputs": [
@@ -622,10 +634,26 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
+   "execution_count": 12,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'gme_revenue' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m/tmp/ipykernel_71/374026413.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mgme_revenue\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtail\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'gme_revenue' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "gme_revenue.tail()"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -643,11 +671,25 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
+   "execution_count": 13,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'make_graph' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m/tmp/ipykernel_71/1765937996.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmake_graph\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtesla_data\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtesla_revenue\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m\"Tesla\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'make_graph' is not defined"
+     ]
+    }
+   ],
    "source": [
-    "gme_revenue.tail()"
+    "make_graph(tesla_data, tesla_revenue, \"Tesla\")"
    ]
   },
   {
